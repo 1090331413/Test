@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+	int n; int i=0;
+	
+	printf("输入数字\n",n);
+	scanf("%d", &n); 
+	do {
+	
+		n=(3.0*n+1)/2;
+		i++;
+}
+	while (n>1);
+		printf("%d", i);
+
+return 0;	
+} 
