@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+	int a[5]={1,2,3,4,5,};
+	int i=0;
+	int j=4;
+	int b;
+	
+	while(i>-1, j>-1)
+	{
+		if(a[i]>a[j])
+			j--;
+		else if(a[i]<a[j])
+			i++;
+		else if(a[i]=a[j]){
+			b=a[i];
+			break;
+		}
+	
+	}
+	printf("%d",b);
+
+return 0;
+ } 
