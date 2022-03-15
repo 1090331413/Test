@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+
+int isPalindrome(int x )
+{
+	int temp, t;
+	
+	t = x;
+	while(x)
+	{
+	temp = temp*10 + x%10;
+	x = x/10; 
+	}
+	return temp;
+}
+
+int main()
+{
+	int m;
+	scanf("%d", &m);
+	if(m<=10)
+
+	printf("���ǻ�����");
+
+	else if (isPalindrome(m) == m)
+	printf("�ǻ�����");
+	else if (isPalindrome(m) != m)
+	printf("���ǻ�����"); 
+	return 0;
+}
+
