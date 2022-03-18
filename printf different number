@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+	int i, j, K, G;
+	scanf("%d", &i);
+	K = i/100;
+	G = i%100;
+	for(j = 1; j<=K; j++)
+	{
+		printf("B");
+	}
+	K = G/10;
+	G = G%10;
+	for(j = 1; j<=K; j++)
+	{
+		printf("S");
+	}
+	for(j = 1; j<=G; j++)
+	{
+		printf("%d", j);
+	}
+	return 0;
+ }
+  
