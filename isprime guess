@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int isPrime(int j)
+{
+	int k;
+	for(k = 2; k<j-1; k++)
+	{
+		if(j % k == 0)
+		{
+			return 0;
+			break;
+		}
+	 } 
+	 return 1;
+}
+
+int main()
+{
+	int i, j = 5, n, t = 0;
+	scanf("%d", &n);
+	for (j; j<=n; j++)
+	{
+		i = j-2;
+		if(isPrime(i) == 1 && isPrime(j) == 1)
+		{
+		t++;
+		}
+	}
+	printf("%d\n", t);
+	return 0;
+}
